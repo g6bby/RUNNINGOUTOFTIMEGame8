@@ -7,6 +7,7 @@ public class DoorCloseTrigger : MonoBehaviour
     public Animator doorClose1;
     public Animator doorClose2;
     public GameObject clockObj;
+    public GameObject BGaudio;
 
 
     void Start()
@@ -22,6 +23,7 @@ public class DoorCloseTrigger : MonoBehaviour
         {
             doorClose1.enabled = true;
             doorClose2.enabled = true;
+            BGaudio.SetActive(false);
             StartCoroutine("clockDelay");
 
         }
