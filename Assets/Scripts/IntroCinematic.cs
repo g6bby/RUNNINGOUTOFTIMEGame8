@@ -19,7 +19,7 @@ public class IntroCinematic : MonoBehaviour
 
     IEnumerator CamDelay()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
 
         introCam.SetActive(false);
         playerCam.SetActive(true);
